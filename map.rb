@@ -10,13 +10,14 @@ class Map
       'hash_crossing': %w[matzburg dynamic_palisades nil_town],
       'dynamic_palisades': %w[hash_crossing matzburg]
     }
-    @cities = %w[enumerable_canyon monkey_patch_city hash_crossing dynamic_palasides matzburg duck_type_beach nil_town]
   end
 
   def neighbors(city)
     return nil if city.nil?
 
     @map.fetch(city.to_sym)
+  rescue KeyError
+    nil
   end
 
   def rubies(city)

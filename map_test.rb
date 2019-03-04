@@ -3,96 +3,70 @@ require 'minitest/autorun'
 require_relative 'map'
 
 class MapTest < Minitest::Test
-
-  # Special method!
-  # This will run the following code before each test
-  # We will re-use the @g instance variable in each method
-  # This was we don't have to type g = Graph::new in each test
-
   def setup
-    @m = Map::new
+    @m = Map.new
   end
 
-  # Remember tests must start with test_ !
+  # Creates a map, refutes that it's nil, and asserts that it is a
+  # kind of Map object.
 
-  # A very simple test to get you into the swing of things!
-  # Creates a graph, refutes that it's nil, and asserts that it is a
-  # kind of Graph object.
-
-  def test_new_graph_not_nil
-    refute_nil @g
-    assert_kind_of Graph, @g
+  def test_new_map_not_nil
+    refute_nil @m
+    assert_kind_of Map, @m
   end
 
-  # This is a "regular" add node test.
-  # We are checking to see if we add a node, does the graph report
-  # the correct number of nodes.
-  # Note though that we now have a dependency on the Node class now,
-  # even though we are testing
+  # UNIT TESTS FOR METHOD neighbors(city)
+  # Equivalence classes:
+  # city does not exist -> returns nil
+  # city exists in the hash -> return an array of neighbor cities
+  # empty string for city parameter -> returns nil
 
-  def test_add_node
-    n = Node::new 1, [2,3]
-
-    @g.add_node n
-
-    assert_equal @g.num_nodes, 1
-
+  # Verifies that an invalid city returns nil for its neighbors.
+  def test_invalid_city_neighbors
+    fake_city = 'enumerable_pittsburgh'
+    assert_nil @m.neighbors(fake_city)
   end
 
-
-  # Create a node which is not part of the graph and refute (opposite
-  # of assert) that it is in the graph.  That is, if we do not add
-  # to the graph, it should not be in there
-  def test_has_node_dummy_with_obj
-    nonexistent_node = Node.new 1, [2]
-    refute @g.node? nonexistent_node
+  # Verifies that a valid city returns proper neighbors.
+  def test_valid_city_neighbors
+    city1 = 'enumerable_canyon'
+    neighbors1 = %w[duck_type_beach monkey_patch_city]
+    city2 = 'monkey_patch_city'
+    neighbors2 = %w[enumerable_canyon nil_town matzburg]
+    city3 = 'dynamic_palisades'
+    neighbors3 = %w[hash_crossing matzburg]
+    assert_equal @m.neighbors(city1), neighbors1
+    assert_equal @m.neighbors(city2), neighbors2
+    assert_equal @m.neighbors(city3), neighbors3
   end
 
-
-  # Verify that adding one node makes our count one.
-
-  def test_add_node_double
-    n = Node.new 1, [1]
-    @g.add_node n
-    # Assert
-    assert_equal 1, @g.num_nodes
+  # Verifies that an empty string returns nil for its neighbors.
+  def test_empty_string_neighbors
+    assert_nil @m.neighbors('')
   end
 
-  # Verify that an empty node prints out "Empty graph!" when
-  # print method is called.
+  # UNIT TESTS FOR METHOD rubies(city)
+  # Equivalence classes:
+  # city does not exist -> returns [-1, -1]
+  # city exists in the hash -> returns an array containing the max number of real rubies, fake rubies, e.g. [2,2]
+  # empty string for city parameter -> returns nil
 
-  def test_print_empty
-    assert_output(/Empty graph!/) { @g.print }
+  # Verifies that an invalid city name returns negative values for real and fake rubies.
+  def test_invalid_city_rubies
+    assert_equal @m.rubies('pittsburgh'), [-1, -1]
+    assert_equal @m.rubies(''), [-1, -1]
   end
 
-  # Verify that a graph with one node prints out correctly
-  def test_print_one_node
-    @g.add_node Node.new 1, [1]
-    assert_output("Node 1: [ 1 ]\n") { @g.print }
+  # Verifies that a valid city returns proper values for max real and fake rubies.
+  def test_valid_city_rubies
+    assert_equal @m.rubies('enumerable_canyon'), [1, 1]
+    assert_equal @m.rubies('hash_crossing'), [2, 2]
+    assert_equal @m.rubies('matzburg'), [3, 0]
+    assert_equal @m.rubies('nil_town'), [0, 3]
   end
 
-  # Verify that a graph with multiple nodes prints out correctly
-  def test_print_multiple_nodes
-    @g.add_node Node.new 1, [2]
-    @g.add_node Node.new 2, [2,3]
-    @g.add_node Node.new 3, [1]
-    assert_output("Node 1: [ 2 ]\nNode 2: [ 2,3 ]\nNode 3: [ 1 ]\n") { @g.print }
+  # Verifies that nil returns negative values for its rubies.
+  def test_nil_rubies
+    assert_equal @m.rubies(nil), [-1, -1]
   end
-
-
-  # Verify that a pseudograph is correctly identified
-  def test_pseudograph
-    n = Node.new 1, [1]
-    @g.add_node n
-    assert @g.pseudograph?
-  end
-
-  # Verify that a non-pseudograph is correctly identified
-  def test_non_pseudograph
-    @g.add_node Node.new 1, [2]
-    @g.add_node Node.new 2, [1]
-    refute @g.pseudograph?
-  end
-
-
 end
