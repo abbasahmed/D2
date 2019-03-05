@@ -1,12 +1,6 @@
 class Prospector
-  def initialize(map, num_turns, name, seed)
-    @map = map
-    @num_turns = num_turns
+  def initialize(name)
     @name = name
-    @real_ruby = 0
-    @fake_ruby = 0
-    @days = 0
-    @seed = seed
   end
 
   def mine(map, city)
@@ -21,85 +15,32 @@ class Prospector
     [real_mined, fake_mined]
   end
 
-  def simulate
-    return nil if @num_turns < 1
+  def print_start(city)
+    return nil if city.nil? || city.size < 1
 
-    print("\nRubyist ##{@name} starting in Enumerable Canyon.\n")
-    current_city = 'enumerable_canyon'
-    current_rubies = mine(@map, current_city)
-    i = 0
-    until i >= @num_turns
-      @days += 1
-      @real_ruby += current_rubies[0]
-      @fake_ruby += current_rubies[1]
-      print_rubies(current_rubies[0], current_rubies[1], current_city)
-      if current_rubies[0].zero? && current_rubies[1].zero?
-        old_city = current_city
-        current_city = switch_city(@map, current_city)
-        i += 1
-        print("Heading from #{pretty_print old_city} to #{pretty_print current_city}") if i < @num_turns
-      end
-      current_rubies = mine(@map, current_city)
-    end
-    finish_simulation(@real_ruby, @fake_ruby, @days, @name)
+    print("\nRubyist ##{@name} starting in #{city}.\n")
   end
 
-  def switch_city(map, city)
-    return nil if map.nil? || city.nil?
+  # Returns concatenated version of all vars.
+  # SUCCESS CASES: All variables are valid and contain something that can be stringified
+  # FAILURE CASES: If any variable is nil, that area is blank
+  #                If days < 1 or name is nil, will return nil
 
-    list = map.neighbors(city)
-    index = rand(list.size)
-    list[index]
-  end
+  # REFERENCED METHOD
 
-  def print_rubies(real, fake, city)
-    print_statement = "\n\tFound"
+  def conclude(real, fake, days)
+    return nil if days < 1 || @name.nil?
 
-    if real.zero? && fake.zero?
-      print_statement += " no rubies or fake rubies in #{pretty_print city}\n"
-      print(print_statement)
-      return
-    end
-
-    case real
-    when 0
-      nil
-    when 1
-      print_statement += " #{real} ruby"
-    else
-      print_statement += " #{real} rubies"
-    end
-
-    print_statement += ' and' if real != 0 && fake != 0
-
-    case fake
-    when 0
-      nil
-    when 1
-      print_statement += " #{fake} fake ruby"
-    else
-      print_statement += " #{fake} fake rubies"
-    end
-
-    print_statement += " in #{pretty_print city}."
-    print(print_statement)
-  end
-
-  def pretty_print(city_name)
-    pretty_city = city_name.split('_').join(' ')
-    pretty_city.split.each(&:capitalize!).join(' ')
-  end
-
-  def finish_simulation(real, fake, days, name)
-    return nil if days < 1 || name.nil?
-
-    print("\nAfter #{days} days, Rubyist #{name} found:")
+    print("\nAfter #{days} days, Rubyist #{@name} found:")
     print("\n\t #{real} rubies.")
     print("\n\t #{fake} fake rubies.")
 
-    if real + fake <= 0
+  end
+
+  def emotion(total)
+    if total <= 0
       print "\nGoing home empty-handed.\n"
-    elsif real + fake <= 9
+    elsif total <= 9
       print "\nGoing home sad.\n"
     else
       print "\nGoing home victorious!\n"

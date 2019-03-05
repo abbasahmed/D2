@@ -1,5 +1,6 @@
 require_relative 'map'
 require_relative 'prospector'
+require_relative 'simulator'
 begin
   if ARGV.count != 3 || ((ARGV[1]).to_i <= 0) || ((ARGV[2]).to_i <= 0)
     print("
@@ -15,5 +16,5 @@ begin
   @num_turns = Integer(ARGV[2])
   @map = Map.new
   srand(@seed)
-  (1..@num_prospectors).each { |i| Prospector.new(@map, @num_turns, i, @seed).simulate }
+  (1..@num_prospectors).each { |i| Simulator.new(@map, Prospector.new(i), @num_turns).simulate(false) }
 end

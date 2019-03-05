@@ -41,6 +41,7 @@ class MapTest < Minitest::Test
   end
 
   # Verifies that an empty string returns nil for its neighbors.
+  # EDGE CASE
   def test_empty_string_neighbors
     assert_nil @m.neighbors('')
   end
