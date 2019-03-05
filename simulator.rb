@@ -1,21 +1,23 @@
 require_relative 'prospector'
 # Simulator class containing methods for running a simulation on the map by the prospector
 class Simulator
+  # constructor
   def initialize(map, prospector, num_turns)
     @map = map
-    @p = prospector
+    @prospector = prospector
     @num_turns = num_turns
     @real_ruby = 0
     @fake_ruby = 0
     @days = 0
   end
 
+  # simulator function which takes in tester boolean to avoid printing statements when the code is being tested
   def simulate(tester)
     return nil if @num_turns < 1
 
     current_city = 'enumerable_canyon'
-    @p.print_start(pretty_print(current_city)) unless tester
-    current_rubies = @p.mine(@map, current_city)
+    @prospector.print_start(pretty_print(current_city)) unless tester
+    current_rubies = @prospector.mine(@map, current_city)
     i = 0
     until i >= @num_turns
       @days += 1
@@ -28,27 +30,32 @@ class Simulator
         i += 1
         print_switch(old_city, current_city) if i < @num_turns && !tester
       end
-      current_rubies = @p.mine(@map, current_city) if i < @num_turns
+      current_rubies = @prospector.mine(@map, current_city) if i < @num_turns
     end
-    @p.conclude(@real_ruby, @fake_ruby, @days) unless tester
-    @p.emotion(@real_ruby + @fake_ruby) unless tester
+    @prospector.conclude(@real_ruby, @fake_ruby, @days) unless tester
+    @prospector.emotion(@real_ruby + @fake_ruby) unless tester
     [@real_ruby, @fake_ruby]
   end
 
+  # helper function to print the switch between cities
   def print_switch(old_city, current_city)
     return nil if old_city.empty? || current_city.empty?
 
     print("Heading from #{pretty_print old_city} to #{pretty_print current_city}")
   end
 
+  # helper function to switch to next city depending on the neighbors
   def switch_city(map, city)
     return nil if map.nil? || city.nil?
 
     list = map.neighbors(city)
+    return nil if list.nil?
+
     index = rand(list.size)
     list[index]
   end
 
+  # helper function to print how many rubies are found in each run
   def print_rubies(real, fake, city)
     real = 0 if real < 0
 
@@ -86,7 +93,10 @@ class Simulator
     print(print_statement)
   end
 
+  # helper function which splits the word by underscores and capitalizes the first letter of each word
   def pretty_print(city_name)
+    return nil if city_name.empty?
+
     pretty_city = city_name.split('_').join(' ')
     pretty_city.split.each(&:capitalize!).join(' ')
   end

@@ -4,6 +4,7 @@ class Prospector
     @name = name
   end
 
+  # method to mine random rubies from a city within the map
   def mine(map, city)
     return nil if map.nil? || city.nil?
 
@@ -16,19 +17,14 @@ class Prospector
     [real_mined, fake_mined]
   end
 
+  # helper method to announce the start of mining
   def print_start(city)
     return nil if city.nil? || city.empty?
 
     print("\nRubyist ##{@name} starting in #{city}.\n")
   end
 
-  # Returns concatenated version of all vars.
-  # SUCCESS CASES: All variables are valid and contain something that can be stringified
-  # FAILURE CASES: If any variable is nil, that area is blank
-  #                If days < 1 or name is nil, will return nil
-
-  # REFERENCED METHOD
-
+  # helper method to announce the retirement of the prospector and his experience of the ruby mining
   def conclude(real, fake, days)
     return nil if days < 1 || @name.nil?
 
@@ -37,6 +33,7 @@ class Prospector
     print("\n\t #{fake} fake rubies.")
   end
 
+  # helper to decide the emotion of prospector after mining rubies.
   def emotion(total)
     if total <= 0
       print "\nGoing home empty-handed.\n"

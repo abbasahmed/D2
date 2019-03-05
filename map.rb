@@ -11,16 +11,19 @@ class Map
       'hash_crossing': %w[matzburg dynamic_palisades nil_town],
       'dynamic_palisades': %w[hash_crossing matzburg]
     }
+    @cities = %w[nil_town monkey_patch_city enumerable_canyon duck_type_beach matzburg hash_crossing dynamic_palisades]
   end
 
+  # helper method to return the list of neighbors of a city in the hash
   def neighbors(city)
     return nil if city.nil?
 
+    return nil unless @cities.include? city
+
     @map.fetch(city.to_sym)
-  rescue KeyError
-    nil
   end
 
+  # helper method to return the max number of real and fake rubies possible to mine
   def rubies(city)
     @max_real_rubies = 0
     @max_fake_rubies = 0
