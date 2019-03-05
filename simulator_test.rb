@@ -1,7 +1,7 @@
 require 'minitest/autorun'
-
 require_relative 'simulator'
 
+# Test for Simulator class
 class SimulatorTest < Minitest::Test
   def setup
     @map = Map.new

@@ -1,3 +1,4 @@
+# Map class that contains the map required to traverse during simulation
 class Map
   # Constructor - store the name passed in as an argument
   def initialize

@@ -1,3 +1,4 @@
+# Prospector class that includes the mining ability and to notify start and finish
 class Prospector
   def initialize(name)
     @name = name
@@ -16,7 +17,7 @@ class Prospector
   end
 
   def print_start(city)
-    return nil if city.nil? || city.size < 1
+    return nil if city.nil? || city.empty?
 
     print("\nRubyist ##{@name} starting in #{city}.\n")
   end
@@ -34,7 +35,6 @@ class Prospector
     print("\nAfter #{days} days, Rubyist #{@name} found:")
     print("\n\t #{real} rubies.")
     print("\n\t #{fake} fake rubies.")
-
   end
 
   def emotion(total)

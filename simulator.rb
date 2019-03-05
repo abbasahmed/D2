@@ -1,4 +1,5 @@
 require_relative 'prospector'
+# Simulator class containing methods for running a simulation on the map by the prospector
 class Simulator
   def initialize(map, prospector, num_turns)
     @map = map

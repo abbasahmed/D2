@@ -1,8 +1,8 @@
 require 'minitest/autorun'
-
 require_relative 'prospector'
 require_relative 'map'
 
+# Test class for Prospector.rb file
 class ProspectorTest < Minitest::Test
   def setup
     @m = Map.new
