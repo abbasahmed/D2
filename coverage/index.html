@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2019-03-04T19:28:57-05:00">2019-03-04T19:28:57-05:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2019-03-05T02:59:09-05:00">2019-03-05T02:59:09-05:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.81
+         3.02
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>7</b> files in total.
-    <b>243</b> relevant lines. 
-    <span class="green"><b>243</b> lines covered</span> and
+    <b>6</b> files in total.
+    <b>248</b> relevant lines. 
+    <span class="green"><b>248</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -53,11 +53,11 @@
       <tr>
         <td class="strong"><a href="#64c0d721c32e0756bb710964f17c0054506fa5bc" class="src_link" title="map.rb">map.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>45</td>
-        <td>22</td>
-        <td>22</td>
+        <td>49</td>
+        <td>23</td>
+        <td>23</td>
         <td>0</td>
-        <td>5.7</td>
+        <td>7.9</td>
       </tr>
       
       <tr>
@@ -73,47 +73,37 @@
       <tr>
         <td class="strong"><a href="#0cbcf560c306096ccd6c74c34a17db7e3e692a3c" class="src_link" title="prospector.rb">prospector.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>49</td>
+        <td>46</td>
         <td>24</td>
         <td>24</td>
         <td>0</td>
-        <td>3.8</td>
+        <td>4.0</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#8b7129ecd352e3f5ae28094cb2ed4f942980d3fd" class="src_link" title="prospector_test.rb">prospector_test.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>100</td>
-        <td>44</td>
-        <td>44</td>
+        <td>121</td>
+        <td>46</td>
+        <td>46</td>
         <td>0</td>
         <td>1.7</td>
       </tr>
       
       <tr>
-        <td class="strong"><a href="#0d04ebdfc1ca72961008766c6f29c6ba437363de" class="src_link" title="rubyrush_test.rb">rubyrush_test.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0.0</td>
-      </tr>
-      
-      <tr>
         <td class="strong"><a href="#4edf0c732d7948806915608375274ed27e5d2648" class="src_link" title="simulator.rb">simulator.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>92</td>
-        <td>59</td>
-        <td>59</td>
+        <td>103</td>
+        <td>61</td>
+        <td>61</td>
         <td>0</td>
-        <td>4.3</td>
+        <td>4.2</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#1e4a1f4433181c0af6a6379d684f49d2f0f8f911" class="src_link" title="simulator_test.rb">simulator_test.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>113</td>
+        <td>158</td>
         <td>61</td>
         <td>61</td>
         <td>0</td>
@@ -141,8 +131,8 @@
     <h3>map.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>22</b> relevant lines. 
-      <span class="green"><b>22</b> lines covered</span> and
+      <b>23</b> relevant lines. 
+      <span class="green"><b>23</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -150,130 +140,130 @@
   <pre>
     <ol>
       
-        <li class="covered" data-hits="1" data-linenumber="1">
+        <li class="never" data-hits="" data-linenumber="1">
+          
+          
+          <code class="ruby"># Map class that contains the map required to traverse during simulation</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
           <code class="ruby">class Map</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="2">
+        <li class="never" data-hits="" data-linenumber="3">
           
           
           <code class="ruby">  # Constructor - store the name passed in as an argument</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="3">
+        <li class="covered" data-hits="1" data-linenumber="4">
           <span class="hits">1</span>
           
           <code class="ruby">  def initialize</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="4">
+        <li class="never" data-hits="" data-linenumber="5">
           
           
           <code class="ruby">    @map = {</code>
         </li>
       
-        <li class="covered" data-hits="38" data-linenumber="5">
-          <span class="hits">38</span>
+        <li class="covered" data-hits="39" data-linenumber="6">
+          <span class="hits">39</span>
           
           <code class="ruby">      &#39;nil_town&#39;: %w[monkey_patch_city hash_crossing],</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="6">
-          
-          
-          <code class="ruby">      &#39;monkey_patch_city&#39;: %w[enumerable_canyon nil_town matzburg],</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="7">
           
           
-          <code class="ruby">      &#39;enumerable_canyon&#39;: %w[duck_type_beach monkey_patch_city],</code>
+          <code class="ruby">      &#39;monkey_patch_city&#39;: %w[enumerable_canyon nil_town matzburg],</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="8">
           
           
-          <code class="ruby">      &#39;duck_type_beach&#39;: %w[enumerable_canyon matzburg],</code>
+          <code class="ruby">      &#39;enumerable_canyon&#39;: %w[duck_type_beach monkey_patch_city],</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="9">
           
           
-          <code class="ruby">      &#39;matzburg&#39;: %w[duck_type_beach hash_crossing dynamic_palisades monkey_patch_city],</code>
+          <code class="ruby">      &#39;duck_type_beach&#39;: %w[enumerable_canyon matzburg],</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="10">
           
           
-          <code class="ruby">      &#39;hash_crossing&#39;: %w[matzburg dynamic_palisades nil_town],</code>
+          <code class="ruby">      &#39;matzburg&#39;: %w[duck_type_beach hash_crossing dynamic_palisades monkey_patch_city],</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="11">
           
           
-          <code class="ruby">      &#39;dynamic_palisades&#39;: %w[hash_crossing matzburg]</code>
+          <code class="ruby">      &#39;hash_crossing&#39;: %w[matzburg dynamic_palisades nil_town],</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="12">
           
           
-          <code class="ruby">    }</code>
+          <code class="ruby">      &#39;dynamic_palisades&#39;: %w[hash_crossing matzburg]</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="13">
           
           
+          <code class="ruby">    }</code>
+        </li>
+      
+        <li class="covered" data-hits="39" data-linenumber="14">
+          <span class="hits">39</span>
+          
+          <code class="ruby">    @cities = %w[nil_town monkey_patch_city enumerable_canyon duck_type_beach matzburg hash_crossing dynamic_palisades]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="14">
+        <li class="never" data-hits="" data-linenumber="16">
           
           
           <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="15">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def neighbors(city)</code>
-        </li>
-      
-        <li class="covered" data-hits="8" data-linenumber="16">
-          <span class="hits">8</span>
-          
-          <code class="ruby">    return nil if city.nil?</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="17">
           
           
+          <code class="ruby">  # helper method to return the list of neighbors of a city in the hash</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def neighbors(city)</code>
+        </li>
+      
+        <li class="covered" data-hits="8" data-linenumber="19">
+          <span class="hits">8</span>
+          
+          <code class="ruby">    return nil if city.nil?</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="18">
+        <li class="covered" data-hits="8" data-linenumber="21">
           <span class="hits">8</span>
           
-          <code class="ruby">    @map.fetch(city.to_sym)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="19">
-          
-          
-          <code class="ruby">  rescue KeyError</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="20">
-          <span class="hits">2</span>
-          
-          <code class="ruby">    nil</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="21">
-          
-          
-          <code class="ruby">  end</code>
+          <code class="ruby">    return nil unless @cities.include? city</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="22">
@@ -282,139 +272,163 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="23">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="5" data-linenumber="23">
+          <span class="hits">5</span>
           
-          <code class="ruby">  def rubies(city)</code>
+          <code class="ruby">    @map.fetch(city.to_sym)</code>
         </li>
       
-        <li class="covered" data-hits="11" data-linenumber="24">
-          <span class="hits">11</span>
-          
-          <code class="ruby">    @max_real_rubies = 0</code>
-        </li>
-      
-        <li class="covered" data-hits="11" data-linenumber="25">
-          <span class="hits">11</span>
-          
-          <code class="ruby">    @max_fake_rubies = 0</code>
-        </li>
-      
-        <li class="covered" data-hits="11" data-linenumber="26">
-          <span class="hits">11</span>
-          
-          <code class="ruby">    case city</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="27">
-          
-          
-          <code class="ruby">    when &#39;hash_crossing&#39;, &#39;dynamic_palisades&#39;, &#39;duck_type_beach&#39;</code>
-        </li>
-      
-        <li class="covered" data-hits="3" data-linenumber="28">
-          <span class="hits">3</span>
-          
-          <code class="ruby">      @max_real_rubies = 2</code>
-        </li>
-      
-        <li class="covered" data-hits="3" data-linenumber="29">
-          <span class="hits">3</span>
-          
-          <code class="ruby">      @max_fake_rubies = 2</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="30">
-          
-          
-          <code class="ruby">    when &#39;enumerable_canyon&#39;, &#39;monkey_patch_city&#39;</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="31">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      @max_real_rubies = 1</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="32">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      @max_fake_rubies = 1</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="33">
-          
-          
-          <code class="ruby">    when &#39;nil_town&#39;</code>
-        </li>
-      
-        <li class="covered" data-hits="3" data-linenumber="34">
-          <span class="hits">3</span>
-          
-          <code class="ruby">      @max_real_rubies = 0</code>
-        </li>
-      
-        <li class="covered" data-hits="3" data-linenumber="35">
-          <span class="hits">3</span>
-          
-          <code class="ruby">      @max_fake_rubies = 3</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="36">
-          
-          
-          <code class="ruby">    when &#39;matzburg&#39;</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="37">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      @max_real_rubies = 3</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="38">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      @max_fake_rubies = 0</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="39">
-          
-          
-          <code class="ruby">    else</code>
-        </li>
-      
-        <li class="covered" data-hits="3" data-linenumber="40">
-          <span class="hits">3</span>
-          
-          <code class="ruby">      @max_real_rubies = -1</code>
-        </li>
-      
-        <li class="covered" data-hits="3" data-linenumber="41">
-          <span class="hits">3</span>
-          
-          <code class="ruby">      @max_fake_rubies = -1</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="42">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="covered" data-hits="11" data-linenumber="43">
-          <span class="hits">11</span>
-          
-          <code class="ruby">    [@max_real_rubies, @max_fake_rubies]</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="44">
+        <li class="never" data-hits="" data-linenumber="24">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="45">
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby">  # helper method to return the max number of real and fake rubies possible to mine</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="27">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def rubies(city)</code>
+        </li>
+      
+        <li class="covered" data-hits="13" data-linenumber="28">
+          <span class="hits">13</span>
+          
+          <code class="ruby">    @max_real_rubies = 0</code>
+        </li>
+      
+        <li class="covered" data-hits="13" data-linenumber="29">
+          <span class="hits">13</span>
+          
+          <code class="ruby">    @max_fake_rubies = 0</code>
+        </li>
+      
+        <li class="covered" data-hits="13" data-linenumber="30">
+          <span class="hits">13</span>
+          
+          <code class="ruby">    case city</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
+          
+          
+          <code class="ruby">    when &#39;hash_crossing&#39;, &#39;dynamic_palisades&#39;, &#39;duck_type_beach&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="32">
+          <span class="hits">3</span>
+          
+          <code class="ruby">      @max_real_rubies = 2</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="33">
+          <span class="hits">3</span>
+          
+          <code class="ruby">      @max_fake_rubies = 2</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="34">
+          
+          
+          <code class="ruby">    when &#39;enumerable_canyon&#39;, &#39;monkey_patch_city&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="35">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      @max_real_rubies = 1</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="36">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      @max_fake_rubies = 1</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="37">
+          
+          
+          <code class="ruby">    when &#39;nil_town&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="38">
+          <span class="hits">3</span>
+          
+          <code class="ruby">      @max_real_rubies = 0</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="39">
+          <span class="hits">3</span>
+          
+          <code class="ruby">      @max_fake_rubies = 3</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="40">
+          
+          
+          <code class="ruby">    when &#39;matzburg&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="41">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      @max_real_rubies = 3</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="42">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      @max_fake_rubies = 0</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="43">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="44">
+          <span class="hits">5</span>
+          
+          <code class="ruby">      @max_real_rubies = -1</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="45">
+          <span class="hits">5</span>
+          
+          <code class="ruby">      @max_fake_rubies = -1</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="46">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="covered" data-hits="13" data-linenumber="47">
+          <span class="hits">13</span>
+          
+          <code class="ruby">    [@max_real_rubies, @max_fake_rubies]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="48">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="49">
           
           
           <code class="ruby">end</code>
@@ -445,22 +459,22 @@
           <code class="ruby">require &#39;minitest/autorun&#39;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="2">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="3">
+        <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
           <code class="ruby">require_relative &#39;map&#39;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="4">
+        <li class="never" data-hits="" data-linenumber="3">
           
           
           <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby"># test class for map</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="5">
@@ -478,7 +492,7 @@
         <li class="covered" data-hits="7" data-linenumber="7">
           <span class="hits">7</span>
           
-          <code class="ruby">    @m = Map.new</code>
+          <code class="ruby">    @map = Map.new</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="8">
@@ -520,13 +534,13 @@
         <li class="covered" data-hits="1" data-linenumber="14">
           <span class="hits">1</span>
           
-          <code class="ruby">    refute_nil @m</code>
+          <code class="ruby">    refute_nil @map</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="15">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_kind_of Map, @m</code>
+          <code class="ruby">    assert_kind_of Map, @map</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="16">
@@ -598,7 +612,7 @@
         <li class="covered" data-hits="1" data-linenumber="27">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_nil @m.neighbors(fake_city)</code>
+          <code class="ruby">    assert_nil @map.neighbors(fake_city)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="28">
@@ -664,19 +678,19 @@
         <li class="covered" data-hits="1" data-linenumber="38">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_equal @m.neighbors(city1), neighbors1</code>
+          <code class="ruby">    assert_equal @map.neighbors(city1), neighbors1</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="39">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_equal @m.neighbors(city2), neighbors2</code>
+          <code class="ruby">    assert_equal @map.neighbors(city2), neighbors2</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="40">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_equal @m.neighbors(city3), neighbors3</code>
+          <code class="ruby">    assert_equal @map.neighbors(city3), neighbors3</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="41">
@@ -712,7 +726,7 @@
         <li class="covered" data-hits="1" data-linenumber="46">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_nil @m.neighbors(&#39;&#39;)</code>
+          <code class="ruby">    assert_nil @map.neighbors(&#39;&#39;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="47">
@@ -778,13 +792,13 @@
         <li class="covered" data-hits="1" data-linenumber="57">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_equal @m.rubies(&#39;pittsburgh&#39;), [-1, -1]</code>
+          <code class="ruby">    assert_equal @map.rubies(&#39;pittsburgh&#39;), [-1, -1]</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="58">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_equal @m.rubies(&#39;&#39;), [-1, -1]</code>
+          <code class="ruby">    assert_equal @map.rubies(&#39;&#39;), [-1, -1]</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="59">
@@ -814,25 +828,25 @@
         <li class="covered" data-hits="1" data-linenumber="63">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_equal @m.rubies(&#39;enumerable_canyon&#39;), [1, 1]</code>
+          <code class="ruby">    assert_equal @map.rubies(&#39;enumerable_canyon&#39;), [1, 1]</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="64">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_equal @m.rubies(&#39;hash_crossing&#39;), [2, 2]</code>
+          <code class="ruby">    assert_equal @map.rubies(&#39;hash_crossing&#39;), [2, 2]</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="65">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_equal @m.rubies(&#39;matzburg&#39;), [3, 0]</code>
+          <code class="ruby">    assert_equal @map.rubies(&#39;matzburg&#39;), [3, 0]</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="66">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_equal @m.rubies(&#39;nil_town&#39;), [0, 3]</code>
+          <code class="ruby">    assert_equal @map.rubies(&#39;nil_town&#39;), [0, 3]</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="67">
@@ -862,7 +876,7 @@
         <li class="covered" data-hits="1" data-linenumber="71">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_equal @m.rubies(nil), [-1, -1]</code>
+          <code class="ruby">    assert_equal @map.rubies(nil), [-1, -1]</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="72">
@@ -896,136 +910,136 @@
   <pre>
     <ol>
       
-        <li class="covered" data-hits="1" data-linenumber="1">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="1">
           
-          <code class="ruby">class Prospector</code>
+          
+          <code class="ruby"># Prospector class that includes the mining ability and to notify start and finish</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
+          <code class="ruby">class Prospector</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
           <code class="ruby">  def initialize(name)</code>
         </li>
       
-        <li class="covered" data-hits="31" data-linenumber="3">
-          <span class="hits">31</span>
+        <li class="covered" data-hits="32" data-linenumber="4">
+          <span class="hits">32</span>
           
           <code class="ruby">    @name = name</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="4">
-          
-          
-          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="5">
           
           
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="6">
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">  # method to mine random rubies from a city within the map</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
           <span class="hits">1</span>
           
           <code class="ruby">  def mine(map, city)</code>
         </li>
       
-        <li class="covered" data-hits="9" data-linenumber="7">
+        <li class="covered" data-hits="9" data-linenumber="9">
           <span class="hits">9</span>
           
           <code class="ruby">    return nil if map.nil? || city.nil?</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="8">
+        <li class="never" data-hits="" data-linenumber="10">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="9">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="7" data-linenumber="11">
+          <span class="hits">7</span>
           
           <code class="ruby">    rubies = map.rubies(city)</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="10">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="7" data-linenumber="12">
+          <span class="hits">7</span>
           
           <code class="ruby">    return nil if rubies == [-1, -1]</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="11">
+        <li class="never" data-hits="" data-linenumber="13">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="12">
+        <li class="covered" data-hits="5" data-linenumber="14">
           <span class="hits">5</span>
           
           <code class="ruby">    real_mined = rand(rubies[0] + 1)</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="13">
+        <li class="covered" data-hits="5" data-linenumber="15">
           <span class="hits">5</span>
           
           <code class="ruby">    fake_mined = rand(rubies[1] + 1)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="14">
+        <li class="never" data-hits="" data-linenumber="16">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="15">
+        <li class="covered" data-hits="5" data-linenumber="17">
           <span class="hits">5</span>
           
           <code class="ruby">    [real_mined, fake_mined]</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="16">
+        <li class="never" data-hits="" data-linenumber="18">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="17">
+        <li class="never" data-hits="" data-linenumber="19">
           
           
           <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="18">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def print_start(city)</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="19">
-          <span class="hits">2</span>
-          
-          <code class="ruby">    return nil if city.nil? || city.size &lt; 1</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="20">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  # helper method to announce the start of mining</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="21">
           <span class="hits">1</span>
           
-          <code class="ruby">    print(&quot;\nRubyist ##{@name} starting in #{city}.\n&quot;)</code>
+          <code class="ruby">  def print_start(city)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="22">
+        <li class="covered" data-hits="2" data-linenumber="22">
+          <span class="hits">2</span>
           
-          
-          <code class="ruby">  end</code>
+          <code class="ruby">    return nil if city.nil? || city.empty?</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="23">
@@ -1034,40 +1048,40 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="24">
+        <li class="covered" data-hits="1" data-linenumber="24">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  # Returns concatenated version of all vars.</code>
+          <code class="ruby">    print(&quot;\nRubyist ##{@name} starting in #{city}.\n&quot;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="25">
           
           
-          <code class="ruby">  # SUCCESS CASES: All variables are valid and contain something that can be stringified</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="26">
           
           
-          <code class="ruby">  # FAILURE CASES: If any variable is nil, that area is blank</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="27">
           
           
-          <code class="ruby">  #                If days &lt; 1 or name is nil, will return nil</code>
+          <code class="ruby">  # helper method to announce the retirement of the prospector and his experience of the ruby mining</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="28">
+        <li class="covered" data-hits="1" data-linenumber="28">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">  def conclude(real, fake, days)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="29">
+        <li class="covered" data-hits="2" data-linenumber="29">
+          <span class="hits">2</span>
           
-          
-          <code class="ruby">  # REFERENCED METHOD</code>
+          <code class="ruby">    return nil if days &lt; 1 || @name.nil?</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="30">
@@ -1079,112 +1093,94 @@
         <li class="covered" data-hits="1" data-linenumber="31">
           <span class="hits">1</span>
           
-          <code class="ruby">  def conclude(real, fake, days)</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="32">
-          <span class="hits">2</span>
-          
-          <code class="ruby">    return nil if days &lt; 1 || @name.nil?</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="33">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="34">
-          <span class="hits">1</span>
-          
           <code class="ruby">    print(&quot;\nAfter #{days} days, Rubyist #{@name} found:&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="35">
+        <li class="covered" data-hits="1" data-linenumber="32">
           <span class="hits">1</span>
           
           <code class="ruby">    print(&quot;\n\t #{real} rubies.&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="36">
+        <li class="covered" data-hits="1" data-linenumber="33">
           <span class="hits">1</span>
           
           <code class="ruby">    print(&quot;\n\t #{fake} fake rubies.&quot;)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="37">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="38">
+        <li class="never" data-hits="" data-linenumber="34">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="39">
+        <li class="never" data-hits="" data-linenumber="35">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="40">
+        <li class="never" data-hits="" data-linenumber="36">
+          
+          
+          <code class="ruby">  # helper to decide the emotion of prospector after mining rubies.</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="37">
           <span class="hits">1</span>
           
           <code class="ruby">  def emotion(total)</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="41">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="5" data-linenumber="38">
+          <span class="hits">5</span>
           
           <code class="ruby">    if total &lt;= 0</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="42">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="39">
+          <span class="hits">2</span>
           
           <code class="ruby">      print &quot;\nGoing home empty-handed.\n&quot;</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="43">
+        <li class="covered" data-hits="3" data-linenumber="40">
           <span class="hits">3</span>
           
           <code class="ruby">    elsif total &lt;= 9</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="44">
+        <li class="covered" data-hits="2" data-linenumber="41">
           <span class="hits">2</span>
           
           <code class="ruby">      print &quot;\nGoing home sad.\n&quot;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="45">
+        <li class="never" data-hits="" data-linenumber="42">
           
           
           <code class="ruby">    else</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="46">
+        <li class="covered" data-hits="1" data-linenumber="43">
           <span class="hits">1</span>
           
           <code class="ruby">      print &quot;\nGoing home victorious!\n&quot;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="47">
+        <li class="never" data-hits="" data-linenumber="44">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="48">
+        <li class="never" data-hits="" data-linenumber="45">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="49">
+        <li class="never" data-hits="" data-linenumber="46">
           
           
           <code class="ruby">end</code>
@@ -1200,8 +1196,8 @@
     <h3>prospector_test.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>44</b> relevant lines. 
-      <span class="green"><b>44</b> lines covered</span> and
+      <b>46</b> relevant lines. 
+      <span class="green"><b>46</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -1215,28 +1211,28 @@
           <code class="ruby">require &#39;minitest/autorun&#39;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="2">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="3">
+        <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
           <code class="ruby">require_relative &#39;prospector&#39;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="4">
+        <li class="covered" data-hits="1" data-linenumber="3">
           <span class="hits">1</span>
           
           <code class="ruby">require_relative &#39;map&#39;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="5">
+        <li class="never" data-hits="" data-linenumber="4">
           
           
           <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby"># Test class for Prospector.rb file</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="6">
@@ -1251,14 +1247,14 @@
           <code class="ruby">  def setup</code>
         </li>
       
-        <li class="covered" data-hits="14" data-linenumber="8">
-          <span class="hits">14</span>
+        <li class="covered" data-hits="15" data-linenumber="8">
+          <span class="hits">15</span>
           
-          <code class="ruby">    @m = Map.new</code>
+          <code class="ruby">    @map = Map.new</code>
         </li>
       
-        <li class="covered" data-hits="14" data-linenumber="9">
-          <span class="hits">14</span>
+        <li class="covered" data-hits="15" data-linenumber="9">
+          <span class="hits">15</span>
           
           <code class="ruby">    @pt = Prospector.new(1)</code>
         </li>
@@ -1338,7 +1334,7 @@
         <li class="never" data-hits="" data-linenumber="22">
           
           
-          <code class="ruby">  # city or map does is nil -&gt; returns nil</code>
+          <code class="ruby">  # city or map is nil -&gt; returns nil</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="23">
@@ -1350,55 +1346,55 @@
         <li class="never" data-hits="" data-linenumber="24">
           
           
-          <code class="ruby">  # empty string for city parameter -&gt; returns nil</code>
+          <code class="ruby">  # invalid input for city parameter -&gt; returns nil</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="25">
           
           
-          <code class="ruby">  # passing in an integer for city -&gt; returns [-1, -1]</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="26">
           
           
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="27">
-          
-          
           <code class="ruby">  # Verifies that nil parameters returns nil for mining array.</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="28">
+        <li class="covered" data-hits="1" data-linenumber="27">
           <span class="hits">1</span>
           
           <code class="ruby">  def test_nil_params_mine</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="29">
+        <li class="covered" data-hits="1" data-linenumber="28">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_nil @pt.mine(@m, nil)</code>
+          <code class="ruby">    assert_nil @pt.mine(@map, nil)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="30">
+        <li class="covered" data-hits="1" data-linenumber="29">
           <span class="hits">1</span>
           
           <code class="ruby">    assert_nil @pt.mine(nil, &#39;enumerable_canyon&#39;)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="31">
+        <li class="never" data-hits="" data-linenumber="30">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="32">
+        <li class="never" data-hits="" data-linenumber="31">
           
           
           <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="32">
+          
+          
+          <code class="ruby">  # verifies that valid parameters return an array of random rubies for max&gt;= real &gt;=0 and max&gt;= fake &gt;=0</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="33">
@@ -1410,25 +1406,25 @@
         <li class="covered" data-hits="1" data-linenumber="34">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_operator @pt.mine(@m, &#39;hash_crossing&#39;)[0], :&lt;=, 2</code>
+          <code class="ruby">    assert_operator @pt.mine(@map, &#39;hash_crossing&#39;)[0], :&lt;=, 2</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="35">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_operator @pt.mine(@m, &#39;hash_crossing&#39;)[1], :&lt;=, 2</code>
+          <code class="ruby">    assert_operator @pt.mine(@map, &#39;hash_crossing&#39;)[1], :&lt;=, 2</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="36">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_equal @pt.mine(@m, &#39;nil_town&#39;)[0], 0</code>
+          <code class="ruby">    assert_equal @pt.mine(@map, &#39;nil_town&#39;)[0], 0</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="37">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_operator @pt.mine(@m, &#39;nil_town&#39;)[1], :&lt;=, 3</code>
+          <code class="ruby">    assert_operator @pt.mine(@map, &#39;nil_town&#39;)[1], :&lt;=, 3</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="38">
@@ -1446,139 +1442,139 @@
         <li class="never" data-hits="" data-linenumber="40">
           
           
-          <code class="ruby">  # STUBBING</code>
+          <code class="ruby">  # STUBBING - creates a mock map and stubs the rubies function to return [1, 1]. Mining should not return nil.</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="41">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="42">
+        <li class="covered" data-hits="1" data-linenumber="41">
           <span class="hits">1</span>
           
           <code class="ruby">  def test_mine_map</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="43">
+        <li class="covered" data-hits="1" data-linenumber="42">
           <span class="hits">1</span>
           
           <code class="ruby">    mock_map = Minitest::Mock.new(&#39;mocked_map&#39;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="44">
+        <li class="covered" data-hits="1" data-linenumber="43">
           <span class="hits">1</span>
           
           <code class="ruby">    def mock_map.rubies(_param)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="45">
+        <li class="covered" data-hits="1" data-linenumber="44">
           <span class="hits">1</span>
           
           <code class="ruby">      [1, 1]</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="46">
+        <li class="never" data-hits="" data-linenumber="45">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="47">
+        <li class="covered" data-hits="1" data-linenumber="46">
           <span class="hits">1</span>
           
           <code class="ruby">    refute_nil @pt.mine(mock_map, &#39;nil_town&#39;)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="48">
+        <li class="never" data-hits="" data-linenumber="47">
           
           
           <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="48">
+          
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="49">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  # EDGE CASE - checks whether an empty string returns nil</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="50">
-          
-          
-          <code class="ruby">  # EDGE CASE</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="51">
+        <li class="covered" data-hits="1" data-linenumber="50">
           <span class="hits">1</span>
           
           <code class="ruby">  def test_empty_string_mine</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="52">
+        <li class="covered" data-hits="1" data-linenumber="51">
           <span class="hits">1</span>
           
           <code class="ruby">    assert_nil @pt.mine(@map, &#39;&#39;)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="53">
+        <li class="never" data-hits="" data-linenumber="52">
           
           
           <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="53">
+          
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="54">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  # EDGE CASE - checks whether an invalid input, not string, returns nil</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="55">
-          
-          
-          <code class="ruby">  # EDGE CASE</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="56">
+        <li class="covered" data-hits="1" data-linenumber="55">
           <span class="hits">1</span>
           
           <code class="ruby">  def test_integer_for_city_mine</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="57">
+        <li class="covered" data-hits="1" data-linenumber="56">
           <span class="hits">1</span>
           
           <code class="ruby">    assert_nil @pt.mine(@map, -1)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="58">
+        <li class="never" data-hits="" data-linenumber="57">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="59">
+        <li class="never" data-hits="" data-linenumber="58">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="60">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="59">
           
-          <code class="ruby">  def test_print_start</code>
+          
+          <code class="ruby">  # UNIT TESTS FOR METHOD print_start(city)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="61">
-          <span class="hits">2</span>
+        <li class="never" data-hits="" data-linenumber="60">
           
-          <code class="ruby">    assert_output(&quot;\nRubyist #1 starting in Enumerable Canyon.\n&quot;) { @pt.print_start(&#39;Enumerable Canyon&#39;) }</code>
+          
+          <code class="ruby">  # Equivalence classes:</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="61">
+          
+          
+          <code class="ruby">  # city is valid -&gt; returns Rubyist &lt;name&gt; starting in &lt;city&gt;.</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="62">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">  # city is invalid -&gt;return nil</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="63">
@@ -1590,19 +1586,19 @@
         <li class="never" data-hits="" data-linenumber="64">
           
           
-          <code class="ruby">  # EDGE CASE</code>
+          <code class="ruby">  # verify that passing a city name will print the right statement</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="65">
           <span class="hits">1</span>
           
-          <code class="ruby">  def test_empty_print_start</code>
+          <code class="ruby">  def test_print_start</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="66">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="66">
+          <span class="hits">2</span>
           
-          <code class="ruby">    assert_nil(@pt.print_start(&#39;&#39;))</code>
+          <code class="ruby">    assert_output(&quot;\nRubyist #1 starting in Enumerable Canyon.\n&quot;) { @pt.print_start(&#39;Enumerable Canyon&#39;) }</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="67">
@@ -1620,145 +1616,145 @@
         <li class="never" data-hits="" data-linenumber="69">
           
           
-          <code class="ruby">  # UNIT TESTS FOR METHOD emotion(total)</code>
+          <code class="ruby">  # EDGE CASE - verify that empty string will return nil</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="70">
+        <li class="covered" data-hits="1" data-linenumber="70">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  # Equivalence classes:</code>
+          <code class="ruby">  def test_empty_print_start</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="71">
+        <li class="covered" data-hits="1" data-linenumber="71">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  # total =&gt; -INFINITY.....0 - &gt; Print information and &quot;Going home empty handed&quot;</code>
+          <code class="ruby">    assert_nil(@pt.print_start(&#39;&#39;))</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="72">
           
           
-          <code class="ruby">  # total =&gt; 1.....9 - &gt; Print information and &quot;Going home sad&quot;</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="73">
           
           
-          <code class="ruby">  # total =&gt; 10....INFINITY - &gt; Print information and &quot;Going home victorious&quot;</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="74">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="74">
           
-          <code class="ruby">  def test_emotion_zero_rubies</code>
+          
+          <code class="ruby">  # UNIT TESTS FOR METHOD emotion(total)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="75">
-          <span class="hits">2</span>
+        <li class="never" data-hits="" data-linenumber="75">
           
-          <code class="ruby">    assert_output(&quot;\nGoing home empty-handed.\n&quot;) { @pt.emotion(0) }</code>
+          
+          <code class="ruby">  # Equivalence classes:</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="76">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">  # total =&gt; -INFINITY.....0 - &gt; Print information and &quot;Going home empty handed&quot;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="77">
           
           
+          <code class="ruby">  # total =&gt; 1.....9 - &gt; Print information and &quot;Going home sad&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="78">
+          
+          
+          <code class="ruby">  # total =&gt; 10....INFINITY - &gt; Print information and &quot;Going home victorious&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="79">
+          
+          
           <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="78">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def test_emotion_sad_rubies</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="79">
-          <span class="hits">2</span>
-          
-          <code class="ruby">    assert_output(&quot;\nGoing home sad.\n&quot;) { @pt.emotion(4) }</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="80">
           
           
+          <code class="ruby">  # verify whether prospector is going home empty handed for negative values</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="81">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def test_emotion_negative_rubies</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="82">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    assert_output(&quot;\nGoing home empty-handed.\n&quot;) { @pt.emotion(0) }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="83">
+          
+          
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="81">
+        <li class="never" data-hits="" data-linenumber="84">
           
           
           <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="82">
-          
-          
-          <code class="ruby">  # EDGE CASE</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="83">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def test_emotion_nine_rubies</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="84">
-          <span class="hits">2</span>
-          
-          <code class="ruby">    assert_output(&quot;\nGoing home sad.\n&quot;) { @pt.emotion(9) }</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="85">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">  # EDGE CASE - Check whether prospector is going home empty handed for zero rubies</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="86">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="87">
+        <li class="covered" data-hits="1" data-linenumber="86">
           <span class="hits">1</span>
           
-          <code class="ruby">  def test_emotion_happy_rubies</code>
+          <code class="ruby">  def test_emotion_zero_rubies</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="88">
+        <li class="covered" data-hits="2" data-linenumber="87">
           <span class="hits">2</span>
           
-          <code class="ruby">    assert_output(&quot;\nGoing home victorious!\n&quot;) { @pt.emotion(13) }</code>
+          <code class="ruby">    assert_output(&quot;\nGoing home empty-handed.\n&quot;) { @pt.emotion(0) }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="88">
+          
+          
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="89">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="90">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  # Check whether prospector is going home sad for &lt;9 rubies</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="91">
           <span class="hits">1</span>
           
-          <code class="ruby">  def test_conclude_negative_days</code>
+          <code class="ruby">  def test_emotion_sad_rubies</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="92">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="92">
+          <span class="hits">2</span>
           
-          <code class="ruby">    assert_nil(@pt.conclude(0, 0, -1))</code>
+          <code class="ruby">    assert_output(&quot;\nGoing home sad.\n&quot;) { @pt.emotion(4) }</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="93">
@@ -1773,60 +1769,167 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="95">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="95">
           
-          <code class="ruby">  def test_conclude_positive_values</code>
+          
+          <code class="ruby">  # EDGE CASE - Check whether prospector is going home sad for 9 rubies</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="96">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_output(&quot;\nAfter 2 days, Rubyist 1 found:\n\t 2 rubies.\n\t 2 fake rubies.&quot;) do</code>
+          <code class="ruby">  def test_emotion_nine_rubies</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="97">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="97">
+          <span class="hits">2</span>
           
-          <code class="ruby">      @pt.conclude(2, 2, 2)</code>
+          <code class="ruby">    assert_output(&quot;\nGoing home sad.\n&quot;) { @pt.emotion(9) }</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="98">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="99">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="100">
           
           
-          <code class="ruby">end</code>
+          <code class="ruby">  # Check whether prospector is going home victorious for &gt;9 rubies</code>
         </li>
       
-    </ol>
-  </pre>
-</div>
-
+        <li class="covered" data-hits="1" data-linenumber="101">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def test_emotion_happy_rubies</code>
+        </li>
       
-        <div class="source_table" id="0d04ebdfc1ca72961008766c6f29c6ba437363de">
-  <div class="header">
-    <h3>rubyrush_test.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
-    <div>
-      <b>0</b> relevant lines. 
-      <span class="green"><b>0</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
-    </div>
-  </div>
-  
-  <pre>
-    <ol>
+        <li class="covered" data-hits="2" data-linenumber="102">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    assert_output(&quot;\nGoing home victorious!\n&quot;) { @pt.emotion(13) }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="103">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="104">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="105">
+          
+          
+          <code class="ruby">  # UNIT TESTS FOR METHOD conclude(real, fake, days)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="106">
+          
+          
+          <code class="ruby">  # Equivalence classes:</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="107">
+          
+          
+          <code class="ruby">  # positive values - &gt; return a summary of real, fake rubies found and no. of days taken</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="108">
+          
+          
+          <code class="ruby">  # negative days - &gt; return nil</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="109">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="110">
+          
+          
+          <code class="ruby">  # verify whether negative days return nil</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="111">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def test_conclude_negative_days</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="112">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    assert_nil(@pt.conclude(0, 0, -1))</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="113">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="114">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="115">
+          
+          
+          <code class="ruby">  # verify whether positive values return a short summary</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="116">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def test_conclude_positive_values</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="117">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    assert_output(&quot;\nAfter 2 days, Rubyist 1 found:\n\t 2 rubies.\n\t 2 fake rubies.&quot;) do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="118">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      @pt.conclude(2, 2, 2)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="119">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="120">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="121">
+          
+          
+          <code class="ruby">end</code>
+        </li>
       
     </ol>
   </pre>
@@ -1838,8 +1941,8 @@
     <h3>simulator.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>59</b> relevant lines. 
-      <span class="green"><b>59</b> lines covered</span> and
+      <b>61</b> relevant lines. 
+      <span class="green"><b>61</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -1853,226 +1956,226 @@
           <code class="ruby">require_relative &#39;prospector&#39;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="2">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="2">
           
-          <code class="ruby">class Simulator</code>
+          
+          <code class="ruby"># Simulator class containing methods for running a simulation on the map by the prospector</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="3">
           <span class="hits">1</span>
           
+          <code class="ruby">class Simulator</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">  # constructor</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
           <code class="ruby">  def initialize(map, prospector, num_turns)</code>
-        </li>
-      
-        <li class="covered" data-hits="17" data-linenumber="4">
-          <span class="hits">17</span>
-          
-          <code class="ruby">    @map = map</code>
-        </li>
-      
-        <li class="covered" data-hits="17" data-linenumber="5">
-          <span class="hits">17</span>
-          
-          <code class="ruby">    @p = prospector</code>
         </li>
       
         <li class="covered" data-hits="17" data-linenumber="6">
           <span class="hits">17</span>
           
-          <code class="ruby">    @num_turns = num_turns</code>
+          <code class="ruby">    @map = map</code>
         </li>
       
         <li class="covered" data-hits="17" data-linenumber="7">
           <span class="hits">17</span>
           
-          <code class="ruby">    @real_ruby = 0</code>
+          <code class="ruby">    @prospector = prospector</code>
         </li>
       
         <li class="covered" data-hits="17" data-linenumber="8">
           <span class="hits">17</span>
           
-          <code class="ruby">    @fake_ruby = 0</code>
+          <code class="ruby">    @num_turns = num_turns</code>
         </li>
       
         <li class="covered" data-hits="17" data-linenumber="9">
           <span class="hits">17</span>
           
+          <code class="ruby">    @real_ruby = 0</code>
+        </li>
+      
+        <li class="covered" data-hits="17" data-linenumber="10">
+          <span class="hits">17</span>
+          
+          <code class="ruby">    @fake_ruby = 0</code>
+        </li>
+      
+        <li class="covered" data-hits="17" data-linenumber="11">
+          <span class="hits">17</span>
+          
           <code class="ruby">    @days = 0</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="10">
+        <li class="never" data-hits="" data-linenumber="12">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="11">
+        <li class="never" data-hits="" data-linenumber="13">
           
           
           <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="12">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def simulate(tester)</code>
-        </li>
-      
-        <li class="covered" data-hits="3" data-linenumber="13">
-          <span class="hits">3</span>
-          
-          <code class="ruby">    return nil if @num_turns &lt; 1</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="14">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  # simulator function which takes in tester boolean to avoid printing statements when the code is being tested</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="15">
           <span class="hits">1</span>
           
-          <code class="ruby">    current_city = &#39;enumerable_canyon&#39;</code>
+          <code class="ruby">  def simulate(tester)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="16">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="3" data-linenumber="16">
+          <span class="hits">3</span>
           
-          <code class="ruby">    @p.print_start(pretty_print(current_city)) unless tester</code>
+          <code class="ruby">    return nil if @num_turns &lt; 1</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="17">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    current_rubies = @p.mine(@map, current_city)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="18">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    i = 0</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="19">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    until i &gt;= @num_turns</code>
-        </li>
-      
-        <li class="covered" data-hits="4" data-linenumber="20">
-          <span class="hits">4</span>
-          
-          <code class="ruby">      @days += 1</code>
-        </li>
-      
-        <li class="covered" data-hits="4" data-linenumber="21">
-          <span class="hits">4</span>
-          
-          <code class="ruby">      @real_ruby += current_rubies[0]</code>
-        </li>
-      
-        <li class="covered" data-hits="4" data-linenumber="22">
-          <span class="hits">4</span>
-          
-          <code class="ruby">      @fake_ruby += current_rubies[1]</code>
-        </li>
-      
-        <li class="covered" data-hits="4" data-linenumber="23">
-          <span class="hits">4</span>
-          
-          <code class="ruby">      print_rubies(current_rubies[0], current_rubies[1], current_city) unless tester</code>
-        </li>
-      
-        <li class="covered" data-hits="4" data-linenumber="24">
-          <span class="hits">4</span>
-          
-          <code class="ruby">      if current_rubies[0].zero? &amp;&amp; current_rubies[1].zero?</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="25">
-          <span class="hits">2</span>
-          
-          <code class="ruby">        old_city = current_city</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="26">
-          <span class="hits">2</span>
-          
-          <code class="ruby">        current_city = switch_city(@map, current_city)</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="27">
-          <span class="hits">2</span>
-          
-          <code class="ruby">        i += 1</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="28">
-          <span class="hits">2</span>
-          
-          <code class="ruby">        print_switch(old_city, current_city) if i &lt; @num_turns &amp;&amp; !tester</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="29">
-          
-          
-          <code class="ruby">      end</code>
-        </li>
-      
-        <li class="covered" data-hits="4" data-linenumber="30">
-          <span class="hits">4</span>
-          
-          <code class="ruby">      current_rubies = @p.mine(@map, current_city) if i &lt; @num_turns</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="31">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="32">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    @p.conclude(@real_ruby, @fake_ruby, @days) unless tester</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="33">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    @p.emotion(@real_ruby + @fake_ruby) unless tester</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="34">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    [@real_ruby, @fake_ruby]</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="35">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="36">
+        <li class="never" data-hits="" data-linenumber="17">
           
           
           <code class="ruby"></code>
         </li>
       
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    current_city = &#39;enumerable_canyon&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @prospector.print_start(pretty_print(current_city)) unless tester</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    current_rubies = @prospector.mine(@map, current_city)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    i = 0</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="22">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    until i &gt;= @num_turns</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="23">
+          <span class="hits">3</span>
+          
+          <code class="ruby">      @days += 1</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="24">
+          <span class="hits">3</span>
+          
+          <code class="ruby">      @real_ruby += current_rubies[0]</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="25">
+          <span class="hits">3</span>
+          
+          <code class="ruby">      @fake_ruby += current_rubies[1]</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="26">
+          <span class="hits">3</span>
+          
+          <code class="ruby">      print_rubies(current_rubies[0], current_rubies[1], current_city) unless tester</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="27">
+          <span class="hits">3</span>
+          
+          <code class="ruby">      if current_rubies[0].zero? &amp;&amp; current_rubies[1].zero?</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="28">
+          <span class="hits">2</span>
+          
+          <code class="ruby">        old_city = current_city</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="29">
+          <span class="hits">2</span>
+          
+          <code class="ruby">        current_city = switch_city(@map, current_city)</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="30">
+          <span class="hits">2</span>
+          
+          <code class="ruby">        i += 1</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="31">
+          <span class="hits">2</span>
+          
+          <code class="ruby">        print_switch(old_city, current_city) if i &lt; @num_turns &amp;&amp; !tester</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="32">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="33">
+          <span class="hits">3</span>
+          
+          <code class="ruby">      current_rubies = @prospector.mine(@map, current_city) if i &lt; @num_turns</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="34">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="35">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @prospector.conclude(@real_ruby, @fake_ruby, @days) unless tester</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="36">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @prospector.emotion(@real_ruby + @fake_ruby) unless tester</code>
+        </li>
+      
         <li class="covered" data-hits="1" data-linenumber="37">
           <span class="hits">1</span>
           
-          <code class="ruby">  def print_switch(old_city, current_city)</code>
+          <code class="ruby">    [@real_ruby, @fake_ruby]</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="38">
-          <span class="hits">3</span>
+        <li class="never" data-hits="" data-linenumber="38">
           
-          <code class="ruby">    return nil if old_city.empty? || current_city.empty?</code>
+          
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="39">
@@ -2081,64 +2184,64 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="40">
+        <li class="never" data-hits="" data-linenumber="40">
+          
+          
+          <code class="ruby">  # helper function to print the switch between cities</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="41">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def print_switch(old_city, current_city)</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="42">
+          <span class="hits">3</span>
+          
+          <code class="ruby">    return nil if old_city.empty? || current_city.empty?</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="43">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="44">
           <span class="hits">1</span>
           
           <code class="ruby">    print(&quot;Heading from #{pretty_print old_city} to #{pretty_print current_city}&quot;)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="41">
+        <li class="never" data-hits="" data-linenumber="45">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="42">
+        <li class="never" data-hits="" data-linenumber="46">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="43">
+        <li class="never" data-hits="" data-linenumber="47">
+          
+          
+          <code class="ruby">  # helper function to switch to next city depending on the neighbors</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="48">
           <span class="hits">1</span>
           
           <code class="ruby">  def switch_city(map, city)</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="44">
+        <li class="covered" data-hits="4" data-linenumber="49">
           <span class="hits">4</span>
           
           <code class="ruby">    return nil if map.nil? || city.nil?</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="45">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="4" data-linenumber="46">
-          <span class="hits">4</span>
-          
-          <code class="ruby">    list = map.neighbors(city)</code>
-        </li>
-      
-        <li class="covered" data-hits="4" data-linenumber="47">
-          <span class="hits">4</span>
-          
-          <code class="ruby">    index = rand(list.size)</code>
-        </li>
-      
-        <li class="covered" data-hits="4" data-linenumber="48">
-          <span class="hits">4</span>
-          
-          <code class="ruby">    list[index]</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="49">
-          
-          
-          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="50">
@@ -2147,16 +2250,16 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="51">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="4" data-linenumber="51">
+          <span class="hits">4</span>
           
-          <code class="ruby">  def print_rubies(real, fake, city)</code>
+          <code class="ruby">    list = map.neighbors(city)</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="52">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="4" data-linenumber="52">
+          <span class="hits">4</span>
           
-          <code class="ruby">    real = 0 if real &lt; 0</code>
+          <code class="ruby">    return nil if list.nil?</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="53">
@@ -2165,22 +2268,22 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="54">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="3" data-linenumber="54">
+          <span class="hits">3</span>
           
-          <code class="ruby">    fake = 0 if fake &lt; 0</code>
+          <code class="ruby">    index = rand(list.size)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="55">
+        <li class="covered" data-hits="3" data-linenumber="55">
+          <span class="hits">3</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">    list[index]</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="56">
-          <span class="hits">6</span>
+        <li class="never" data-hits="" data-linenumber="56">
           
-          <code class="ruby">    print_statement = &quot;\n\tFound&quot;</code>
+          
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="57">
@@ -2189,34 +2292,34 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="58">
+        <li class="never" data-hits="" data-linenumber="58">
+          
+          
+          <code class="ruby">  # helper function to print how many rubies are found in each run</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="59">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def print_rubies(real, fake, city)</code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="60">
           <span class="hits">6</span>
           
-          <code class="ruby">    if real.zero? &amp;&amp; fake.zero?</code>
+          <code class="ruby">    real = 0 if real &lt; 0</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="59">
-          <span class="hits">2</span>
+        <li class="never" data-hits="" data-linenumber="61">
           
-          <code class="ruby">      print_statement += &quot; no rubies or fake rubies in #{pretty_print city}.&quot;</code>
+          
+          <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="60">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="6" data-linenumber="62">
+          <span class="hits">6</span>
           
-          <code class="ruby">      print(print_statement)</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="61">
-          <span class="hits">2</span>
-          
-          <code class="ruby">      return</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="62">
-          
-          
-          <code class="ruby">    end</code>
+          <code class="ruby">    fake = 0 if fake &lt; 0</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="63">
@@ -2225,175 +2328,241 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="64">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="6" data-linenumber="64">
+          <span class="hits">6</span>
           
-          <code class="ruby">    case real</code>
+          <code class="ruby">    print_statement = &quot;\n\tFound&quot;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="65">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="65">
           
-          <code class="ruby">    when 0</code>
+          
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="66">
+        <li class="covered" data-hits="6" data-linenumber="66">
+          <span class="hits">6</span>
           
-          
-          <code class="ruby">      nil</code>
+          <code class="ruby">    if real.zero? &amp;&amp; fake.zero?</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="67">
-          
-          
-          <code class="ruby">    when 1</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="68">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      print_statement += &quot; #{real} ruby&quot;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="69">
-          
-          
-          <code class="ruby">    else</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="70">
+        <li class="covered" data-hits="2" data-linenumber="67">
           <span class="hits">2</span>
           
-          <code class="ruby">      print_statement += &quot; #{real} rubies&quot;</code>
+          <code class="ruby">      print_statement += &quot; no rubies or fake rubies in #{pretty_print city}.&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="68">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      print(print_statement)</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="69">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      return</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="70">
+          
+          
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="71">
           
           
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="72">
-          
-          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="73">
+        <li class="covered" data-hits="4" data-linenumber="72">
           <span class="hits">4</span>
           
-          <code class="ruby">    print_statement += &#39; and&#39; if real != 0 &amp;&amp; fake != 0</code>
+          <code class="ruby">    case real</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="74">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="4" data-linenumber="75">
-          <span class="hits">4</span>
-          
-          <code class="ruby">    case fake</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="76">
+        <li class="covered" data-hits="1" data-linenumber="73">
           <span class="hits">1</span>
           
           <code class="ruby">    when 0</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="77">
+        <li class="never" data-hits="" data-linenumber="74">
           
           
           <code class="ruby">      nil</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="78">
+        <li class="never" data-hits="" data-linenumber="75">
           
           
           <code class="ruby">    when 1</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="79">
+        <li class="covered" data-hits="1" data-linenumber="76">
           <span class="hits">1</span>
           
-          <code class="ruby">      print_statement += &quot; #{fake} fake ruby&quot;</code>
+          <code class="ruby">      print_statement += &quot; #{real} ruby&quot;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="80">
+        <li class="never" data-hits="" data-linenumber="77">
           
           
           <code class="ruby">    else</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="81">
+        <li class="covered" data-hits="2" data-linenumber="78">
           <span class="hits">2</span>
           
-          <code class="ruby">      print_statement += &quot; #{fake} fake rubies&quot;</code>
+          <code class="ruby">      print_statement += &quot; #{real} rubies&quot;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="82">
+        <li class="never" data-hits="" data-linenumber="79">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="83">
+        <li class="never" data-hits="" data-linenumber="80">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="84">
+        <li class="covered" data-hits="4" data-linenumber="81">
           <span class="hits">4</span>
           
-          <code class="ruby">    print_statement += &quot; in #{pretty_print city}.&quot;</code>
+          <code class="ruby">    print_statement += &#39; and&#39; if real != 0 &amp;&amp; fake != 0</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="85">
+        <li class="never" data-hits="" data-linenumber="82">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="83">
           <span class="hits">4</span>
           
-          <code class="ruby">    print(print_statement)</code>
+          <code class="ruby">    case fake</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="84">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    when 0</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="85">
+          
+          
+          <code class="ruby">      nil</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="86">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    when 1</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="87">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="88">
+        <li class="covered" data-hits="1" data-linenumber="87">
           <span class="hits">1</span>
           
-          <code class="ruby">  def pretty_print(city_name)</code>
+          <code class="ruby">      print_statement += &quot; #{fake} fake ruby&quot;</code>
         </li>
       
-        <li class="covered" data-hits="11" data-linenumber="89">
-          <span class="hits">11</span>
+        <li class="never" data-hits="" data-linenumber="88">
           
-          <code class="ruby">    pretty_city = city_name.split(&#39;_&#39;).join(&#39; &#39;)</code>
+          
+          <code class="ruby">    else</code>
         </li>
       
-        <li class="covered" data-hits="11" data-linenumber="90">
-          <span class="hits">11</span>
+        <li class="covered" data-hits="2" data-linenumber="89">
+          <span class="hits">2</span>
           
-          <code class="ruby">    pretty_city.split.each(&amp;:capitalize!).join(&#39; &#39;)</code>
+          <code class="ruby">      print_statement += &quot; #{fake} fake rubies&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="90">
+          
+          
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="91">
           
           
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="92">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    print_statement += &quot; in #{pretty_print city}.&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="93">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    print(print_statement)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="94">
+          
+          
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="92">
+        <li class="never" data-hits="" data-linenumber="95">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="96">
+          
+          
+          <code class="ruby">  # helper function which splits the word by underscores and capitalizes the first letter of each word</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="97">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def pretty_print(city_name)</code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="98">
+          <span class="hits">11</span>
+          
+          <code class="ruby">    return nil if city_name.empty?</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="99">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="10" data-linenumber="100">
+          <span class="hits">10</span>
+          
+          <code class="ruby">    pretty_city = city_name.split(&#39;_&#39;).join(&#39; &#39;)</code>
+        </li>
+      
+        <li class="covered" data-hits="10" data-linenumber="101">
+          <span class="hits">10</span>
+          
+          <code class="ruby">    pretty_city.split.each(&amp;:capitalize!).join(&#39; &#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="102">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="103">
           
           
           <code class="ruby">end</code>
@@ -2424,22 +2593,22 @@
           <code class="ruby">require &#39;minitest/autorun&#39;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="2">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="3">
+        <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
           <code class="ruby">require_relative &#39;simulator&#39;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="4">
+        <li class="never" data-hits="" data-linenumber="3">
           
           
           <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby"># Test for Simulator class</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="5">
@@ -2478,412 +2647,412 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="11">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="11">
           
-          <code class="ruby">  def test_simulator_zero_turns</code>
+          
+          <code class="ruby">  # UNIT TESTS FOR METHOD simulator</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="12">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="12">
           
-          <code class="ruby">    @sim = Simulator.new(@map, @p, 0)</code>
+          
+          <code class="ruby">  # Equivalence classes:</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="13">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="13">
           
-          <code class="ruby">    assert_nil(@sim.simulate(true))</code>
+          
+          <code class="ruby">  # zero turns -&gt; returns nil</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="14">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">  # negative turns -&gt; returns nil</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="15">
           
           
+          <code class="ruby">  # positive turns -&gt; return number of rubies found &gt;=0</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="16">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="17">
           
-          <code class="ruby">  def test_simulator_positive_turns</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="17">
-          <span class="hits">1</span>
           
-          <code class="ruby">    mock_dude = Minitest::Mock.new &#39;dude&#39;</code>
+          <code class="ruby">  # Verifies that zero number of turns returns nil for its neighbors.</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="18">
           <span class="hits">1</span>
           
-          <code class="ruby">    def mock_dude.mine(_param, _param1)</code>
+          <code class="ruby">  def test_simulator_zero_turns</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="19">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
           
-          <code class="ruby">      [[1, 1], [2, 2], [0, 0]].sample</code>
+          <code class="ruby">    @sim = Simulator.new(@map, @prospector, 0)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="20">
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">    end</code>
+          <code class="ruby">    assert_nil(@sim.simulate(true))</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="21">
           
           
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="22">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="23">
           
-          <code class="ruby">    result = Simulator.new(@map, mock_dude, 2).simulate(true)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="23">
-          <span class="hits">1</span>
           
-          <code class="ruby">    assert_operator(result[0], :&gt;=, 0)</code>
+          <code class="ruby">  # STUBBING - Create a mock prospector, stub the mine function and run the simulator on positive no. of turns</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="24">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_operator(result[1], :&gt;=, 0)</code>
+          <code class="ruby">  def test_simulator_positive_turns</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="25">
+        <li class="covered" data-hits="1" data-linenumber="25">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  end</code>
+          <code class="ruby">    mock_dude = Minitest::Mock.new &#39;dude&#39;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="26">
+        <li class="covered" data-hits="1" data-linenumber="26">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    def mock_dude.mine(_param, _param1)</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="27">
+          <span class="hits">3</span>
+          
+          <code class="ruby">      [[1, 1], [2, 2], [0, 0]].sample</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="27">
+        <li class="covered" data-hits="1" data-linenumber="30">
           <span class="hits">1</span>
           
-          <code class="ruby">  def test_simulator_negative_turn</code>
+          <code class="ruby">    result = Simulator.new(@map, mock_dude, 2).simulate(true)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="28">
+        <li class="covered" data-hits="1" data-linenumber="31">
           <span class="hits">1</span>
           
-          <code class="ruby">    result = Simulator.new(@map, @prospector, -1).simulate(true)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="29">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    assert_nil(result)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="30">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="31">
-          
-          
-          <code class="ruby"></code>
+          <code class="ruby">    assert_operator(result[0], :&gt;=, 0)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="32">
           <span class="hits">1</span>
           
-          <code class="ruby">  def test_print_switch_valid</code>
+          <code class="ruby">    assert_operator(result[1], :&gt;=, 0)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="33">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="33">
           
-          <code class="ruby">    assert_output(&#39;Heading from Pitt to New York&#39;) do</code>
+          
+          <code class="ruby">  end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="34">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="34">
           
-          <code class="ruby">      Simulator.new(@map, @prospector, 2).print_switch(&#39;Pitt&#39;, &#39;New York&#39;)</code>
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="35">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby">  # Verifies that negative number of turns returns nil for its neighbors.</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="36">
+        <li class="covered" data-hits="1" data-linenumber="36">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  end</code>
+          <code class="ruby">  def test_simulator_negative_turn</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="37">
+        <li class="covered" data-hits="1" data-linenumber="37">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">    result = Simulator.new(@map, @prospector, -1).simulate(true)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="38">
           <span class="hits">1</span>
           
-          <code class="ruby">  def test_print_switch_empty_a</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="39">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    result = Simulator.new(@map, @prospector, 2).print_switch(&#39;&#39;, &#39;nowhere&#39;)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="40">
-          <span class="hits">1</span>
-          
           <code class="ruby">    assert_nil(result)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="39">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="40">
+          
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="41">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">  # UNIT TESTS FOR METHOD print_switch(old_city, current_city)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="42">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  # Equivalence classes:</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="43">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="43">
           
-          <code class="ruby">  def test_print_switch_empty_b</code>
+          
+          <code class="ruby">  # valid input -&gt; returns Heading from &lt;old_city&gt; to &lt;current_city&gt;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="44">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="44">
           
-          <code class="ruby">    result = Simulator.new(@map, @prospector, 2).print_switch(&#39;nowhere&#39;, &#39;&#39;)</code>
+          
+          <code class="ruby">  # empty string for old_city -&gt; returns nil, prints nothing</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="45">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="45">
           
-          <code class="ruby">    assert_nil(result)</code>
+          
+          <code class="ruby">  # empty string for current_city -&gt; returns nil, prints nothing</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="46">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="47">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  # Verifies that valid city inputs prints the right statement.</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="48">
+        <li class="covered" data-hits="1" data-linenumber="48">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  # STUB</code>
+          <code class="ruby">  def test_print_switch_valid</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="49">
           <span class="hits">1</span>
           
-          <code class="ruby">  def test_switch_valid_city</code>
+          <code class="ruby">    assert_output(&#39;Heading from Pitt to New York&#39;) do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="50">
           <span class="hits">1</span>
           
-          <code class="ruby">    mock_map = Minitest::Mock.new &#39;mock_map&#39;</code>
+          <code class="ruby">      Simulator.new(@map, @prospector, 2).print_switch(&#39;Pitt&#39;, &#39;New York&#39;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="51">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="51">
           
-          <code class="ruby">    def mock_map.neighbors(_param)</code>
+          
+          <code class="ruby">    end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="52">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="52">
           
-          <code class="ruby">      %w[oakland shadyside]</code>
+          
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="53">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="54">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="54">
           
-          <code class="ruby">    next_city = Simulator.new(@map, @prospector, 2).switch_city(mock_map, &#39;southside&#39;)</code>
+          
+          <code class="ruby">  # Verifies that invalid old city name input prints nothing</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="55">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_includes %w[oakland shadyside], next_city</code>
+          <code class="ruby">  def test_print_switch_empty_a</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="56">
+        <li class="covered" data-hits="1" data-linenumber="56">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    result = Simulator.new(@map, @prospector, 2).print_switch(&#39;&#39;, &#39;nowhere&#39;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="57">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    assert_nil(result)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="58">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="57">
+        <li class="never" data-hits="" data-linenumber="59">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="58">
+        <li class="never" data-hits="" data-linenumber="60">
+          
+          
+          <code class="ruby">  # Verifies that invalid current city name input prints nothing</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="61">
           <span class="hits">1</span>
           
-          <code class="ruby">  def test_switch_invalid_city</code>
+          <code class="ruby">  def test_print_switch_empty_b</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="59">
+        <li class="covered" data-hits="1" data-linenumber="62">
           <span class="hits">1</span>
           
-          <code class="ruby">    next_city = Simulator.new(@map, @prospector, 2).switch_city(@map, &#39;monkey_patch_city&#39;)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="60">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    assert_includes %w[enumerable_canyon nil_town matzburg], next_city</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="61">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="62">
-          
-          
-          <code class="ruby"></code>
+          <code class="ruby">    result = Simulator.new(@map, @prospector, 2).print_switch(&#39;nowhere&#39;, &#39;&#39;)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="63">
           <span class="hits">1</span>
           
-          <code class="ruby">  def test_rubies_zero</code>
+          <code class="ruby">    assert_nil(result)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="64">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="64">
           
-          <code class="ruby">    assert_output(&quot;\n\tFound no rubies or fake rubies in Matzburg.&quot;) do</code>
+          
+          <code class="ruby">  end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="65">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="65">
           
-          <code class="ruby">      Simulator.new(@map, @prospector, 2).print_rubies(0, 0, &#39;matzburg&#39;)</code>
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="66">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby">  # UNIT TESTS FOR METHOD switch_city(map, city)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="67">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">  # Equivalence classes:</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="68">
           
           
+          <code class="ruby">  # valid city -&gt; returns a new city, which is a neighbor of old city</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="69">
+          
+          
+          <code class="ruby">  # invalid city -&gt; returns nil</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="70">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="69">
+        <li class="never" data-hits="" data-linenumber="71">
+          
+          
+          <code class="ruby">  # STUBBING - verify that a city is being switched by mocking a map and stubbing the neighbors</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="72">
           <span class="hits">1</span>
           
-          <code class="ruby">  def test_rubies_only_fake_found</code>
+          <code class="ruby">  def test_switch_valid_city</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="70">
+        <li class="covered" data-hits="1" data-linenumber="73">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_output(&quot;\n\tFound 2 fake rubies in Matzburg.&quot;) do</code>
+          <code class="ruby">    mock_map = Minitest::Mock.new &#39;mock_map&#39;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="71">
+        <li class="covered" data-hits="1" data-linenumber="74">
           <span class="hits">1</span>
           
-          <code class="ruby">      Simulator.new(@map, @prospector, 2).print_rubies(0, 2, &#39;matzburg&#39;)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="72">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="73">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="74">
-          
-          
-          <code class="ruby"></code>
+          <code class="ruby">    def mock_map.neighbors(_param)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="75">
           <span class="hits">1</span>
           
-          <code class="ruby">  def test_rubies_only_real_found</code>
+          <code class="ruby">      %w[oakland shadyside]</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="76">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="76">
           
-          <code class="ruby">    assert_output(&quot;\n\tFound 2 rubies in Monkey Patch City.&quot;) do</code>
+          
+          <code class="ruby">    end</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="77">
           <span class="hits">1</span>
           
-          <code class="ruby">      Simulator.new(@map, @prospector, 2).print_rubies(2, 0, &#39;monkey_patch_city&#39;)</code>
+          <code class="ruby">    next_city = Simulator.new(@map, @prospector, 2).switch_city(mock_map, &#39;southside&#39;)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="78">
+        <li class="covered" data-hits="1" data-linenumber="78">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">    end</code>
+          <code class="ruby">    assert_includes %w[oakland shadyside], next_city</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="79">
@@ -2898,28 +3067,28 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="81">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="81">
           
-          <code class="ruby">  def test_rubies_singular</code>
+          
+          <code class="ruby">  # verify that an invalid city name returns nothing</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="82">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_output(&quot;\n\tFound 1 ruby and 1 fake ruby in Matzburg.&quot;) do</code>
+          <code class="ruby">  def test_switch_invalid_city</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="83">
           <span class="hits">1</span>
           
-          <code class="ruby">      Simulator.new(@map, @prospector, 2).print_rubies(1, 1, &#39;matzburg&#39;)</code>
+          <code class="ruby">    next_city = Simulator.new(@map, @prospector, 2).switch_city(@map, &#39;monkey_patch&#39;)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="84">
+        <li class="covered" data-hits="1" data-linenumber="84">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">    end</code>
+          <code class="ruby">    assert_nil  next_city</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="85">
@@ -2934,163 +3103,433 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="87">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="87">
           
-          <code class="ruby">  def test_rubies_plural</code>
+          
+          <code class="ruby">  # UNIT TESTS FOR METHOD print_rubies(real, fake, city)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="88">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="88">
           
-          <code class="ruby">    assert_output(&quot;\n\tFound 2 rubies and 2 fake rubies in Matzburg.&quot;) do</code>
+          
+          <code class="ruby">  # Equivalence classes:</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="89">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="89">
           
-          <code class="ruby">      Simulator.new(@map, @prospector, 2).print_rubies(2, 2, &#39;matzburg&#39;)</code>
+          
+          <code class="ruby">  # Real=0, Fake=0        -&gt; print: Found no rubies or fake rubies in &lt;city&gt;.</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="90">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby">  # Real=0, Fake&gt;1        -&gt; print: Found &#39;n&#39; fake rubies in &lt;city&gt;.</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="91">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">  # Real&gt;1, Fake=0        -&gt; print: Found &#39;n&#39; rubies in &lt;city&gt;.</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="92">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  # Real=1, Fake=1        -&gt; print: Found 1 ruby and 1 fake ruby in &lt;city&gt;.</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="93">
           
           
-          <code class="ruby">  # EDGE CASE</code>
+          <code class="ruby">  # Real&gt;1, Fake&gt;1        -&gt; print: Found &#39;n&#39; rubies and &#39;n&#39; rubies in &lt;city&gt;.</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="94">
           
           
+          <code class="ruby">  # Real, Fake not valid  -&gt; print: Nothing Found</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="95">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="95">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="96">
           
-          <code class="ruby">  def test_rubies_negative</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="96">
-          <span class="hits">1</span>
           
-          <code class="ruby">    assert_output(&quot;\n\tFound no rubies or fake rubies in Matzburg.&quot;) do</code>
+          <code class="ruby">  # verify when real = 0, fake = 0, it print neither rubies are found in city</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="97">
           <span class="hits">1</span>
           
-          <code class="ruby">      Simulator.new(@map, @prospector, 2).print_rubies(-1, -1, &#39;matzburg&#39;)</code>
+          <code class="ruby">  def test_rubies_zero</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="98">
+        <li class="covered" data-hits="1" data-linenumber="98">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">    end</code>
+          <code class="ruby">    assert_output(&quot;\n\tFound no rubies or fake rubies in Matzburg.&quot;) do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="99">
+        <li class="covered" data-hits="1" data-linenumber="99">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  end</code>
+          <code class="ruby">      Simulator.new(@map, @prospector, 2).print_rubies(0, 0, &#39;matzburg&#39;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="100">
           
           
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="101">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="102">
+          
+          
           <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="101">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def test_pretty_print_capitalize</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="102">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    assert_equal &#39;Matzburg&#39;, Simulator.new(@map, @prospector, 2).pretty_print(&#39;matzburg&#39;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="103">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">  # verify when real = 0, fake&gt;1, it prints only fake rubies found</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="104">
+        <li class="covered" data-hits="1" data-linenumber="104">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">  def test_rubies_only_fake_found</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="105">
           <span class="hits">1</span>
           
-          <code class="ruby">  def test_pretty_print_underscores</code>
+          <code class="ruby">    assert_output(&quot;\n\tFound 2 fake rubies in Matzburg.&quot;) do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="106">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_equal &#39;Nil Town&#39;, Simulator.new(@map, @prospector, 2).pretty_print(&#39;nil_town&#39;)</code>
+          <code class="ruby">      Simulator.new(@map, @prospector, 2).print_rubies(0, 2, &#39;matzburg&#39;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="107">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="108">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="109">
           
           
-          <code class="ruby">  # EDGE CASE</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="110">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="110">
           
-          <code class="ruby">  def test_pretty_print_nothing</code>
+          
+          <code class="ruby">  # verify when real&gt;1, fake = 0, it prints only real rubies found</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="111">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_equal &#39;&#39;, Simulator.new(@map, @prospector, 2).pretty_print(&#39;&#39;)</code>
+          <code class="ruby">  def test_rubies_only_real_found</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="112">
+        <li class="covered" data-hits="1" data-linenumber="112">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    assert_output(&quot;\n\tFound 2 rubies in Monkey Patch City.&quot;) do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="113">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      Simulator.new(@map, @prospector, 2).print_rubies(2, 0, &#39;monkey_patch_city&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="114">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="115">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="113">
+        <li class="never" data-hits="" data-linenumber="116">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="117">
+          
+          
+          <code class="ruby">  # verify when real=1, fake = 1, it prints singular ruby found of each kind</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="118">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def test_rubies_singular</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="119">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    assert_output(&quot;\n\tFound 1 ruby and 1 fake ruby in Matzburg.&quot;) do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="120">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      Simulator.new(@map, @prospector, 2).print_rubies(1, 1, &#39;matzburg&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="121">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="122">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="123">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="124">
+          
+          
+          <code class="ruby">  # verify when real&gt;1, fake&gt;1, it prints rubies found of each kind in plural form</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="125">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def test_rubies_plural</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="126">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    assert_output(&quot;\n\tFound 2 rubies and 2 fake rubies in Matzburg.&quot;) do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="127">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      Simulator.new(@map, @prospector, 2).print_rubies(2, 2, &#39;matzburg&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="128">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="129">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="130">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="131">
+          
+          
+          <code class="ruby">  # EDGE CASE - when negative values are passed in for rubies, it should print that nothing is found.</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="132">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def test_rubies_negative</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="133">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    assert_output(&quot;\n\tFound no rubies or fake rubies in Matzburg.&quot;) do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="134">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      Simulator.new(@map, @prospector, 2).print_rubies(-1, -1, &#39;matzburg&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="135">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="136">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="137">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="138">
+          
+          
+          <code class="ruby">  # UNIT TESTS FOR METHOD pretty_print(city)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="139">
+          
+          
+          <code class="ruby">  # Equivalence classes:</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="140">
+          
+          
+          <code class="ruby">  # underscores           -&gt; returns the city name word split by underscores</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="141">
+          
+          
+          <code class="ruby">  # first letters         -&gt; returns the city name with each word capitalized</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="142">
+          
+          
+          <code class="ruby">  # Invalid input         -&gt; returns nil</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="143">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="144">
+          
+          
+          <code class="ruby">  # verify whether a string is being capitalized by first letter</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="145">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def test_pretty_print_capitalize</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="146">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    assert_equal &#39;Matzburg&#39;, Simulator.new(@map, @prospector, 2).pretty_print(&#39;matzburg&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="147">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="148">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="149">
+          
+          
+          <code class="ruby">  # verify whether a string is being split by underscores</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="150">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def test_pretty_print_underscores</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="151">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    assert_equal &#39;Nil Town&#39;, Simulator.new(@map, @prospector, 2).pretty_print(&#39;nil_town&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="152">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="153">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="154">
+          
+          
+          <code class="ruby">  # EDGE CASE - when nothing is passed in, nothing should be returned, nil</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="155">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def test_pretty_print_nothing</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="156">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    assert_nil Simulator.new(@map, @prospector, 2).pretty_print(&#39;&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="157">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="158">
           
           
           <code class="ruby">end</code>
